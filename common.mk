@@ -96,7 +96,7 @@ help:
 
 build: clean _dev_image
 	mkdir build/
-	$(call container_make,build)
+	$(call container_make,build,)
 
 
 clean:
@@ -109,7 +109,7 @@ dev: _dev_image
 
 
 tests: _dev_image
-	$(call container_make,tests)
+	$(call container_make,tests,)
 
 
 image: build/
