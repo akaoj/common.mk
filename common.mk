@@ -95,7 +95,7 @@ help:
 
 
 build: clean _dev_image
-	mkdir build/
+	mkdir -p build/
 	$(call container_make,build,)
 
 
