@@ -100,7 +100,7 @@ build: clean _dev_image
 
 
 clean:
-	find build/ -mindepth 1 -delete
+	-find build/ -mindepth 1 -delete
 
 
 dev: _dev_image
